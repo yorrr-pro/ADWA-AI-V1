@@ -13,7 +13,8 @@ DEBUG = os.environ.get("DJANGO_DEBUG", "False").lower() in ("1", "true", "yes")
 
 # ALLOWED_HOSTS: comma-separated env var, default empty list (local dev)
 _allowed_hosts = os.environ.get("DJANGO_ALLOWED_HOSTS", "")
-ALLOWED_HOSTS = [h.strip() for h in _allowed_hosts.split(",") if h.strip()]
+# Use '*' to allow any host, or add your specific Render URL
+ALLOWED_HOSTS = ['project-adwa-1.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 INSTALLED_APPS = [
