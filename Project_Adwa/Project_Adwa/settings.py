@@ -101,9 +101,15 @@ STATIC_ROOT = BASE_DIR / "staticfiles"   # collectstatic will put files here
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # CORS - allow origins from env or your local dev addresses
-_CORS = os.environ.get("CORS_ALLOWED_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173")
-CORS_ALLOWED_ORIGINS = [u.strip() for u in _CORS.split(",") if u.strip()]
 
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://adwa-b.onrender.com",
+    "https://adwa-f-teal.vercel.app",
+]
+CORS_ALLOW_ALL_ORIGINS = True
 # Security settings recommended for production
 if not DEBUG:
     # honor X-Forwarded-Proto header for request.is_secure()
