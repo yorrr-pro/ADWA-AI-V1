@@ -1,0 +1,29 @@
+# Django + deployment essentials
+Django==6.0.3
+gunicorn==20.1.0
+whitenoise==6.12.0
+django-cors-headers==4.9.0
+dj-database-url==3.1.2
+python-dotenv==1.2.2
+
+# Google Gemini / GenAI SDK
+google-genai==1.67.0
+
+# LangChain ecosystem
+langchain==1.2.12
+langchain-chroma==1.1.0
+langchain-huggingface==1.2.1
+
+# Chroma vector DB (client + native deps)
+chromadb==1.5.5
+
+# Local embeddings via Hugging Face (required by langchain-huggingface for HuggingFaceEmbeddings)
+sentence-transformers>=5.2.0,<6.0.0
+transformers>=5.0.0,<6.0.0
+huggingface-hub>=0.18.0
+
+# DB adapter if you switch to Postgres on Render (optional but useful)
+psycopg2-binary==2.9.11
+
+# Utils
+requests>=2.31.0
