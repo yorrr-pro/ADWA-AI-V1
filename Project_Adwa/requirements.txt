@@ -10,9 +10,10 @@ python-dotenv==1.2.2
 google-genai==1.67.0
 langchain-google-genai==2.0.10
 
-# LangChain ecosystem
-langchain==1.2.12
-langchain-chroma==1.1.0
+# LangChain ecosystem (UPDATED VERSIONS)
+langchain==0.3.19
+langchain-community==0.3.19
+langchain-chroma==0.2.2
 
 # Chroma vector DB + SQLite Fix for Render
 chromadb==1.5.5
