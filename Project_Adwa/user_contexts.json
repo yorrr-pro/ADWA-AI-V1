@@ -1,0 +1,31 @@
+{
+  "default_user": [
+    {
+      "timestamp": 1773677075,
+      "question": "who is mnilik",
+      "answer": "**📝 Answer**\n\n**Information Not Available**\n\nBased on the provided contexts and user history, I cannot answer the question about \"mnilik\".\n\n**TL;DR:** ❌ No information available on \"mnilik\".",
+      "entities": {
+        "entities": [
+          "Answer",
+          "Information Not Available",
+          "Based"
+        ]
+      }
+    },
+    {
+      "timestamp": 1773677090,
+      "question": "what?",
+      "answer": "**📝 Answer to User Question**\n\nBased on the provided web search results and book excerpt, the answer to the user question \"what?\" is as follows:\n\n* What is a question word used to ask for information about something. 💡\n* The word what is a question word used to ask for information about something.\n* What is a question word used to ask for information about something. (Repeating from the book excerpt)\n\n**TL;DR:** The word \"what\" is a question word used to ask for information about something.",
+      "entities": {
+        "entities": [
+          "Answer",
+          "User Question",
+          "Based",
+          "What",
+          "The",
+          "Repeating"
+        ]
+      }
+    }
+  ]
+}
