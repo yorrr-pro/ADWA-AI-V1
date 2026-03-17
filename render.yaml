@@ -4,5 +4,5 @@ services:
     env: python
     runtime: python3.12
     rootDir: Project_Adwa
-    buildCommand: python -m pip install --upgrade pip setuptools wheel && pip install -r ../requirements.txt && python manage.py collectstatic --noinput
+    buildCommand: python -m pip install --upgrade pip setuptools wheel && pip install -r requirements.txt && python manage.py collectstatic --noinput
     startCommand: gunicorn Project_Adwa.wsgi:application --bind 0.0.0.0:$PORT
